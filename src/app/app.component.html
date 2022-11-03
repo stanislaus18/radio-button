@@ -1,4 +1,89 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<form class="form">
+  <h1>Smart house</h1>
+  <b
+    ><span
+      >What would like to use : Building Minds : Floor {{ currentFloor }} room
+      {{ currentSpace }}</span
+    ></b
+  >
+  <h4>Air Condition</h4>
+  <div class="switch-field">
+    <input
+      type="radio"
+      id="radio-ac-one"
+      name="switch-ac-one"
+      value="yes"
+      (change)="ac(true)"
+    />
+    <label for="radio-ac-one">Yes</label>
+    <input
+      type="radio"
+      id="radio-ac-two"
+      name="switch-ac-one"
+      value="no"
+      checked
+      (change)="ac(false)"
+    />
+    <label for="radio-ac-two">No</label>
+  </div>
+  <h4>Lights</h4>
+  <div class="switch-field">
+    <input
+      type="radio"
+      id="radio-light-one"
+      name="switch-light-one"
+      value="yes"
+      (change)="light(true)"
+    />
+    <label for="radio-light-one">Yes</label>
+    <input
+      type="radio"
+      id="radio-light-two"
+      name="switch-light-one"
+      value="no"
+      checked
+      (change)="light(false)"
+    />
+    <label for="radio-light-two">No</label>
+  </div>
+  <h4>TV</h4>
+  <div class="switch-field">
+    <input
+      type="radio"
+      id="radio-tv-one"
+      name="switch-tv-one"
+      value="yes"
+      (change)="tv(true)"
+    />
+    <label for="radio-tv-one">Yes</label>
+    <input
+      type="radio"
+      id="radio-tv-two"
+      name="switch-tv-one"
+      value="no"
+      checked
+      (change)="tv(false)"
+    />
+    <label for="radio-tv-two">No</label>
+  </div>
+  <h4>Fridge</h4>
+  <div class="switch-field">
+    <input
+      type="radio"
+      id="radio-fridge-one"
+      name="switch-fridge-one"
+      value="yes"
+      (change)="fridge(true)"
+    />
+    <label for="radio-fridge-one">Yes</label>
+    <input
+      type="radio"
+      id="radio-fridge-two"
+      name="switch-fridge-one"
+      value="no"
+      checked
+      (change)="fridge(false)"
+    />
+    <label for="radio-fridge-two">No</label>
+  </div>
+</form>
